@@ -9,7 +9,7 @@
     <header>
             <center>
                 <font face="arial">
-                    <h1>
+                    <h1 id="titulo">
                         Login
                     </h1>
                 </font>
@@ -22,8 +22,8 @@
             border-radius: 20px;
             height: 350px;
             display: block;
-            margin-bottom: 15px
-            
+            margin-bottom: 15px;
+            text-align: center;
         }
         #enviar{
             margin: 20px;
@@ -55,10 +55,35 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        #tabela{
+            background-color:darksalmon;
+            text-align: center;
+        }
+
+        #tablee{
+            background-color: aliceblue;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+        }
+
+        #titulo {
+    text-align: center; /* Centraliza o texto */
+    color: #fff; /* Texto branco para destacar o neon */
+    text-shadow: 
+        0 0 5px #0ff,   /* azul claro */
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #00f,  /* azul forte */
+        0 0 80px #00f,
+        2px 2px 5px rgba(0,0,0,0.6); /* sombra normal para contraste */
+}
+
+
     </style>
 
     <main>
-        <center>
+    
         <div id="fundo">
             <form>
                 <br>
@@ -78,7 +103,30 @@
                 <input type="submit" id="cancelar" value="Cancelar">
             </form>
         </div>
-        </center>
+
+        <div id="tabela">
+            <table border="2" id="tablee">
+                <tr>
+                    <td colspan="3" style="background-color: blue; color: white;">Estoque</td>
+                </tr>
+                <tr>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                    <td>Quantidade</td>
+                </tr>
+                <tr>
+                    <td>Celular</td>
+                    <td>R$2000,00</td>
+                    <td>4 Unidades</td>
+                </tr>
+                <tr>
+                    <td>Computador</td>
+                    <td>R$5000,00</td>
+                    <td>10 Unidades</td>
+                </tr>
+            </table>
+        </div>
+    
     </main>
 
     <footer>
